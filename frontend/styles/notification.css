@@ -1,0 +1,51 @@
+:root{
+    --soft-blue: #7AB1E8;
+    --bright-green: #5AD967;
+}
+
+.notification-container{
+    margin: 0 auto;
+    width: 800px;
+    font-family: 'Poppins', sans-serif;
+    font-weight:300;
+}
+
+.notify-item{
+    display:flex;
+    justify-content: space-between;
+    margin:10px 0;
+    border-radius: 4px;
+    padding:15px;
+    background-color: var(--soft-blue);
+    font-size: 14px;
+    margin-bottom:25px;
+}
+
+.notify-item h3{
+    font-size: 16px;
+    margin:0;
+    font-weight:500;
+}
+
+.notify-left{
+    width:80%;
+    margin-left: 20px;
+    margin-right:25px;
+}
+
+.notify-right{
+    width:20%;
+}
+
+button{
+    width:80px;
+    height:50px;
+    cursor: pointer;
+    background-color: var(--bright-green);
+    border-radius: 6px;
+    font-size: 20px;
+    margin-top:10px;
+    border:none;
+    color:white;
+    font-weight: 300;
+}
