@@ -15,7 +15,7 @@ class Notify extends React.Component {
 
   fetchRecalls() {
     $.ajax({
-      url: `http://api.fda.gov/food/enforcement.json?limit=20&sort=report_date:desc`,
+      url: `https://api.fda.gov/food/enforcement.json?limit=20&sort=report_date:desc`,
       method: "GET",
     })
     .then((data) => {
