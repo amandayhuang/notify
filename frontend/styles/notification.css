@@ -63,4 +63,12 @@ button{
   .notify-item h3{
     font-size: 20px;
   }
+
+  .notify-left{
+    width:60%;
+   }
+
+  .notify-right{
+        width:40%;
+  }
 }
