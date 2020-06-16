@@ -8,8 +8,12 @@ class Notify extends React.Component {
     super(props);
     // initialize notifications state to anything already in localStorage
     let localNotifications = localStorage.getItem('notifications');
-    if (localNotifications) localNotifications = JSON.parse(localNotifications);
-    localNotifications = localNotifications instanceof Object ? localNotifications : {};
+    if (localNotifications) {
+        localNotifications = JSON.parse(localNotifications)
+    }else{
+        localNotifications = {};
+    }
+    
     this.state = { notifications: localNotifications };
   }
 
