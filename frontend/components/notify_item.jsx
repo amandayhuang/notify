@@ -24,6 +24,9 @@ class NotifyItem extends React.Component {
         let reportDate = this.state.notification.report_date;
         reportDate = reportDate.slice(0,4)+"-"+reportDate.slice(4,6)+"-"+reportDate.slice(6);
         reportDate = new Date(reportDate);
+        let reportDateString = reportDate.toUTCString();
+        reportDateString = reportDateString.split(" 00:00:00")[0];
+
         if(this.state.notification.dismissed === false) {
             return (
               <div className="notify-item">
@@ -37,7 +40,7 @@ class NotifyItem extends React.Component {
                 </div>
                 <div className="notify-right">
                   <time className="recall-date">
-                    {reportDate.toDateString()}
+                      {reportDateString}
                   </time>
                   <button onClick={this.clearNotification}>Clear</button>
                 </div>
