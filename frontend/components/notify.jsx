@@ -50,7 +50,7 @@ class Notify extends React.Component {
 
   render() {
     // console.log(this.state.notifications);
-    return (
+    return ( 
       <>
       <div className='notification-container'>
       <h1>Food Recall Notifications</h1>        
