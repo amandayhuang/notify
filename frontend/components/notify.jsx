@@ -1,7 +1,7 @@
 import React from "react";
 // import { Link } from "react-router-dom";
 // import ReactDOM from "react-dom";
-import NotifyItem from './notify_item';
+import {NotifyItem, NotifyItemHook} from './notify_item';
 
 class Notify extends React.Component {
   constructor(props) {
@@ -56,7 +56,7 @@ class Notify extends React.Component {
       <h1>Food Recall Notifications</h1>        
       {
         Object.values(this.state.notifications).map((notification) => (
-            <NotifyItem key={notification.recall_number} notification={notification} />
+            <NotifyItemHook key={notification.recall_number} notification={notification} />
         ))
        }
        </div>
